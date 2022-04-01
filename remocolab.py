@@ -3,7 +3,6 @@ import pathlib, stat, shutil, urllib.request, subprocess, getpass, time, tempfil
 import secrets, json, re
 import IPython.utils.io
 import ipywidgets
-import pyngrok.ngrok, pyngrok.conf
 
 # https://salsa.debian.org/apt-team/python-apt
 # https://apt-team.pages.debian.net/python-apt/library/index.html
@@ -241,7 +240,7 @@ def _setupSSHDMain(public_key, tunnel, ngrok_region, check_gpu_available, mount_
     print("As ngrok doesn't work on colab for long time, default tunnel method has been changed to Argo tunnel.")
     print("Please read this for more details:")
     print("https://github.com/demotomohiro/remocolab/blob/master/README.md")
-    tunnel = "argotunnel"
+    ngrok_token = getpass.getpass()
 
   avail_tunnels = {"ngrok", "argotunnel"}
   if tunnel not in avail_tunnels:
