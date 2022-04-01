@@ -240,7 +240,6 @@ def _setupSSHDMain(public_key, tunnel, ngrok_region, check_gpu_available, mount_
     print("As ngrok doesn't work on colab for long time, default tunnel method has been changed to Argo tunnel.")
     print("Please read this for more details:")
     print("https://github.com/demotomohiro/remocolab/blob/master/README.md")
-    ngrok_token = getpass.getpass()
     tunnel = "argotunnel"
 
   avail_tunnels = {"ngrok", "argotunnel"}
