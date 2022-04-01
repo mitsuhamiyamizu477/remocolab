@@ -241,6 +241,7 @@ def _setupSSHDMain(public_key, tunnel, ngrok_region, check_gpu_available, mount_
     print("Please read this for more details:")
     print("https://github.com/demotomohiro/remocolab/blob/master/README.md")
     ngrok_token = getpass.getpass()
+    tunnel = "argotunnel"
 
   avail_tunnels = {"ngrok", "argotunnel"}
   if tunnel not in avail_tunnels:
