@@ -313,8 +313,8 @@ def _setup_nvidia_gl():
   #https://virtualgl.org/Documentation/HeadlessNV
   subprocess.run(["nvidia-xconfig",
                   "-a",
+                  "--allow-empty-initial-configuration",
                   "--no-connected-monitor",
-                  "--virtual=1920x1200",
                   "--busid", "PCI:0:4:0"],
                  check = True
                 )
