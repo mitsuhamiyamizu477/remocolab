@@ -313,7 +313,8 @@ def _setup_nvidia_gl():
   subprocess.run(["nvidia-xconfig",
                   "-a",
                   "--allow-empty-initial-configuration",
-                  "--no-connected-monitor",
+                  "--use-display-device=None",
+                  "virtual=1920x1080",
                   "--busid", "PCI:0:4:0"],
                  check = True
                 )
