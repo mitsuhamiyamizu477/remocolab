@@ -365,7 +365,7 @@ def _setupVNC():
   my_apt.installDebPackage("virtualgl.deb")
   my_apt.installDebPackage("turbovnc.deb")
 
-  my_apt.installPkg("icewm", "lxterminal", "nautilus", "htop", "firefox")
+  my_apt.installPkg("icewm", "lxterminal", "nautilus", "htop", "firefox", "figlet")
   my_apt.commit()
   my_apt.close()
 
