@@ -365,7 +365,7 @@ def _setupVNC():
   my_apt.installDebPackage("virtualgl.deb")
   my_apt.installDebPackage("turbovnc.deb")
 
-  my_apt.installPkg("xfce4", "xfce4-terminal")
+  my_apt.installPkg("icewm", "lxterminal")
   my_apt.commit()
   my_apt.close()
 
