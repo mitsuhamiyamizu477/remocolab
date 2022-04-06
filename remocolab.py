@@ -365,7 +365,7 @@ def _setupVNC():
   my_apt.installDebPackage("virtualgl.deb")
   my_apt.installDebPackage("turbovnc.deb")
 
-  my_apt.installPkg("xfce4", "lxterminal", "font-manager", "htop", "firefox", "figlet")
+  my_apt.installPkg("xfce4", "lxterminal", "font-manager", "htop", "firefox", "figlet", "cabextract", "winbind")
   my_apt.commit()
   my_apt.close()
 
